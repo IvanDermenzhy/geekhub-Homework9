@@ -1,0 +1,536 @@
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FONTS----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'DroidSans';
+	src: url('../fonts/Droid_Sans/droidsans.eot');
+	src: url('../fonts/Droid_Sans/droidsans.woff2') format('woff2');
+url('../fonts/Droid_Sans/droidsans.ttf') format('truetype');
+url('../fonts/Droid_Sans/droidsans.svg') format('svg');
+url('../fonts/Droid_Sans/droidsans.woff') format('woff');
+}
+@font-face {
+	font-family: 'DroidSans-Bold';
+	src: url('../fonts/Droid_Sans/droidsans-bold.eot');
+	src: url('../fonts/Droid_Sans/droidsans-bold.woff2') format('woff2');
+url('../fonts/Droid_Sans/droidsans-bold.ttf') format('truetype');
+url('../fonts/Droid_Sans/droidsans-bold.svg') format('svg');
+url('../fonts/Droid_Sans/droidsans-bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'DroidSerif';
+	src: url('../fonts/Droid_Serif/droidserif.eot');
+	src: url('../fonts/Droid_Serif/droidserif.woff2') format('woff2');
+url('../fonts/Droid_Serif/droidserif.ttf') format('truetype');
+url('../fonts/Droid_Serif/droidserif.svg') format('svg');
+url('../fonts/Droid_Serif/droidserif.woff') format('woff');
+}
+@font-face {
+	font-family: 'DroidSerif-Bold';
+	src: url('../fonts/Droid_Serif/droidserif-bold.eot');
+	src: url('../fonts/Droid_Serif/droidserif-bold.woff2') format('woff2');
+url('../fonts/Droid_Serif/droidserif-bold.ttf') format('truetype');
+url('../fonts/Droid_Serif/droidserif-bold.svg') format('svg');
+url('../fonts/Droid_Serif/droidserif-bold.woff') format('woff');
+}
+header.affix {
+    background: #2c3e50;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 10px 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+}
+* {
+	color: #fff;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding-left: 0;
+}
+h2 {
+    font-family: 'DroidSans-Bold', Arial, sans-serif;
+    font-size: 45px;
+}
+h3 {
+    font-family: 'DroidSans-Bold', Arial, sans-serif;
+    font-size: 26px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.welcome-section {
+	position: relative;
+	height: 100vh;
+}
+.fixed {
+	margin-top: 40px;
+}
+.navbar-brand {
+	padding: 0;
+}
+.navbar-brand>img {
+	height: 100%;
+	width: auto;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-nav>li{
+	margin-left: 20px;
+}
+.navbar-nav>li>a {
+	font-family: 'DroidSans',Arial, sans-serif;
+	font-size: 20px;
+	color: #fff;
+	line-height: 50px;
+	padding: 0;
+	border-bottom: 2px solid transparent;
+}
+.navbar-nav>li>a:focus {
+    background: rgba(4, 163, 72, 0.1);
+}
+.nav>li>a:hover{
+	border-bottom: 2px solid #23c88f;
+	background: none;
+}
+.bg-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+	background-size: cover;
+}
+.welcome-section h2 {
+	font-family: 'DroidSans-Bold', Arial, sans-serif;
+	font-size: 76px;
+	max-width: 830px;
+    margin-top: 30%;
+}
+.explore {
+    font-family: 'DroidSerif', serif;
+    font-size: 27px;
+	position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+	padding-top: 70px;
+	background: none;
+	border: 1px solid transparent;
+}
+.explore:after {
+	content: '';
+	background: url("../images/content/explore.png")center no-repeat;
+	width: 62px;
+	height: 61px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.explore:before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(204, 204, 204, 0.21);
+    width: 98.9vw;
+    height: 1px;
+    display: block;
+}
+.about-section {
+    background: #34495e;
+}
+.about-section header {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.about-section header p {
+    font-family: 'DroidSerif', serif;
+    font-size: 24px;
+}
+.our-vantage {
+    padding: 0;
+}
+.our-vantage li {
+    margin: 50px 0;
+}
+.our-vantage p {
+    font-family: 'DroidSerif', serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 240px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.bg-img {
+    display: block;
+    margin: 0 auto;
+    width: 153px;
+    height: 152px;
+}
+.services {
+    background: url("../images/content/services.png") center no-repeat;
+}
+.retina {
+    background: url("../images/content/retina.png") center no-repeat;
+}
+.support {
+     background: url("../images/content/support.png") center no-repeat;
+ }
+.portfolio-section {
+    padding: 110px 0;
+}
+.portfolio-section header h2 {
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+.portfolio-filter {
+    margin-bottom: 90px;
+}
+.portfolio-filter li {
+    font-family: 'DroidSans', Arial, sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 0 15px;
+    display: inline-block;
+    color: #2c3e50;
+}
+.works-hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    opacity: 0;
+    background: rgba(52, 73, 94, 0.95);
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: 15px;
+    bottom: 0;
+}
+.works-hover a {
+    font-family: 'DroidSerif', serif;
+    font-size: 12px;
+    color: #fff;
+    margin: 0 auto;
+    text-decoration: none;
+    line-height: 26px;
+    padding: 0 15px;
+    background: none;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.works-hover a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.works-hover h3 {
+    font-family: 'DroidSans-Bold',Arial, sans-serif ;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.single-item:hover .works-hover {
+    opacity: 1;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+.portfolio-filter li.active {
+    color: #fff;
+    border-radius: 15px;
+    background: #23c88f;
+}
+.portfolio-items {
+    margin-bottom: 100px;
+}
+.portfolio-items .wrapper {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.portfolio-items img {
+    width: 100%;
+    height: 260px;
+}
+.single-item {
+    margin: 15px 0;
+}
+.team-section {
+    padding: 110px 0;
+    background-color: #2980b9;
+    overflow: hidden;
+}
+.team-section header h2 {
+    margin-bottom: 50px;
+}
+.our-team img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.our-team p {
+    font-family: 'DroidSerif', serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 310px;
+}
+.our-team a {
+    display: inline-block;
+    width: 59px;
+    height: 58px;
+    margin: 30px 15px;
+    background: url("../images/content/sprite(social).png");
+}
+.our-team .insta {
+    background-position: 0 -116px;
+}
+.contact-section {
+    padding: 110px 0;
+}
+.contact-section header {
+    font-family: 'DroidSans-Bold',Arial, sans-serif;
+    margin-bottom: 50px;
+}
+.contact-section h2 {
+    font-size: 45px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+.contact-section header p {
+    font-size: 26px;
+    color: #2c3e50;
+    line-height: 33px;
+}
+.contact-form {
+    font-family: 'DroidSerif',serif;
+    font-size: 26px;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #2ecc71;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline: 0;
+}
+.contact-form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.contact-form input::-webkit-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {color: #2c3e50;}
+.contact-form input::-moz-placeholder,
+.contact-form textarea::-webkit-input-placeholder {color: #2c3e50;}/* Firefox 19+ */
+.contact-form input:-moz-placeholder,
+.contact-form textarea::-webkit-input-placeholder {color: #2c3e50;}/* Firefox 18- */
+.contact-form input:-ms-input-placeholder,
+.contact-form textarea::-webkit-input-placeholder {color: #2c3e50;}
+
+
+.contact-form input::-webkit-input-placeholder       {text-indent: 0;   transition: text-indent 0.3s ease;}
+.contact-form input::-moz-placeholder                {text-indent: 0;   transition: text-indent 0.3s ease;}
+.contact-form input:-moz-placeholder                 {text-indent: 0;   transition: text-indent 0.3s ease;}
+.contact-form input:-ms-input-placeholder            {text-indent: 0;   transition: text-indent 0.3s ease;}
+.contact-form input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.contact-form input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.contact-form input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.contact-form input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+.contact-form textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.contact-form textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.contact-form textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.contact-form textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.contact-form textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.contact-form textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.contact-form textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.contact-form textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.contact-form .massage {
+    height: 200px;
+}
+.contact-form .massage::-webkit-input-placeholder {text-indent: 0}
+.contact-form .massage::-moz-placeholder          {text-indent: 0;}/* Firefox 19+ */
+.contact-form .massage:-moz-placeholder           {text-indent: 0;}/* Firefox 18- */
+.contact-form .massage:-ms-input-placeholder      {text-indent: 0;}
+
+.contact-form button {
+    background: #2ecc71;
+    color: #fff;
+    font-size: 21px;
+    line-height: 33px;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.address * {
+    font-family: 'DroidSans', Arial, sans-serif;
+    font-size: 20px;
+    color: #2c3e50;
+}
+.address address {
+    margin-bottom: 30px;
+}
+.address address strong {
+    margin-bottom: 10px;
+    display: block;
+}
+.address a {
+    display: block;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+body>footer {
+    font-family: 'DroidSans', Arial,sans-serif;
+    background: #2c3e50;
+    padding: 40px 0;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.address-company img {
+    margin-bottom: 30px;
+}
+.address-company,
+.contact-company {
+    padding-bottom: 10px;
+}
+.address-company p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+.contact-company a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+}
+.social a {
+    display: inline-block;
+    width: 59px;
+    height: 58px;
+    margin: 0 15px;
+    background: url("../images/content/sprite(social).png");
+}
+.social .fb {
+    background-position: 0 -58px;
+}
+.social .insta {
+    background-position: 0 -116px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------OTHER----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+	.welcome-section {
+		background: url("../video/background.png") no-repeat center center;
+		background-size: cover;
+	}
+    .welcome-section h2 {
+        font-size: 50px;
+    }
+	.bg-video {
+		display: none;
+	}
+	.navbar-toggle .icon-bar {
+		background-color: #fff;
+		width: 35px;
+		height: 5px;
+	}
+    .portfolio-section,
+    .team-section,
+    .contact-section {
+        padding: 30px 0;
+    }
+    .contact-form {
+        margin-bottom: 50px;
+    }
+    .contact-form {
+        margin-bottom: 50px;
+    }
+    .contact-form button {
+        display: block;
+        margin: 0 auto;
+    }
+    body>footer .flexbox {
+        display: block;
+    }
+    .address-company,
+    .contact-company a{
+        margin-bottom: 20px;
+    }
+    .social a {
+        margin: 0;
+        margin-right: 30px;
+    }
+    .navbar-nav>li>a {
+        text-align: center;
+    }
+    .nav>li>a:hover {
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .welcome-section h2 {
+        font-size: 50px;
+    }
+
+    .our-vantage p {
+        width: 370px;
+    }
+
+    .portfolio-filter li {
+        margin: 0;
+    }
+
+    .contact-form button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contact-form {
+        margin-bottom: 50px;
+    }
+
+    .address address {
+        height: 150px;
+    }
+
+    .portfolio-section,
+    .team-section,
+    .contact-section {
+        padding: 30px 0;
+
+    }
+}
